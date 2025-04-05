@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: typescript-todo-cli
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://itspersonal4vivek:B-WRc!kT_9Mr2vH@cluster0.ogf2mj2.mongodb.net/todo-app?retryWrites=true&w=majority&appName=Cluster0
+      - key: PORT
+        value: 10000
